@@ -1,0 +1,42 @@
+package Vegas.org;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.SQLQuery;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.jboss.logging.Logger;
+
+public class Main {
+	
+	private static Logger log = Logger.getLogger(Main.class.getName());
+
+	public static void main(String[] args) {
+		
+		SessionFactory sessionFactory = HibernateUtil.getSessionfactory();
+		Session session = sessionFactory.openSession();
+		List<Object> products = null;
+		try {
+			session.beginTransaction();			
+			
+			SQLQuery query = session.createSQLQuery("SELECT p.* FROM product p");
+			query.addEntity("p", models.Product.class);
+			products = query.list();
+			
+			session.getTransaction().commit();
+		}catch(Exception e) {
+			session.getTransaction().rollback();
+			log.error("message ....", e);
+		}finally{
+			session.close();
+			sessionFactory.close();
+		}
+		
+		for(Iterator iterator = products.iterator(); iterator.hasNext();) {
+			models.Product product = (models.Product) iterator.next();
+			System.out.println(product.toString());
+		}
+	}
+}
+

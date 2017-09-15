@@ -1,0 +1,48 @@
+package models;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="product_category")
+public class ProductCategory extends Model{
+	
+	@Column(name="title")
+	private String title;
+	
+	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@JoinColumn(name="parent_product_category", referencedColumnName="id")
+	private ProductCategory parentProductCategory;
+
+	private static final long serialVersionUID = 6875657231396402716L;
+	
+	public ProductCategory() {
+		super();
+	}
+	
+	public ProductCategory(long id) {
+		super(id);
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public ProductCategory getParentProductCategory() {
+		return parentProductCategory;
+	}
+
+	public void setParentProductCategory(ProductCategory parentProductCategory) {
+		this.parentProductCategory = parentProductCategory;
+	}
+	
+}

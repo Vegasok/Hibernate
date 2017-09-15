@@ -1,0 +1,7 @@
+package models;
+
+public class Order extends Model{
+
+	private static final long serialVersionUID = 7631194264501456268L;
+
+}

@@ -1,0 +1,27 @@
+package models;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="product")
+public class Product extends Model{
+
+	private static final long serialVersionUID = -7881391014358935700L;
+	
+	private String title;	
+	private String description;
+	
+	private BigDecimal price;
+	
+	public Product() {
+		super();
+	}
+	
+	public Product(long id) {
+		super(id);
+	}
+	
+}

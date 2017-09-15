@@ -1,0 +1,660 @@
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4c3487]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [READ]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@dff0b7]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [UPGRADE]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@975100]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [UPGRADE_NOWAIT]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@136e77e]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [UPGRADE_SKIPLOCKED]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@10c9195]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [FORCE]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b5824]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [PESSIMISTIC_READ]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@dd09b1]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [PESSIMISTIC_WRITE]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8dcdaa]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [PESSIMISTIC_FORCE_INCREMENT]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@be877d]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [OPTIMISTIC]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f8b2dc]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Product)
+    - Returns
+       - EntityReturnImpl(entity=models.Product, querySpaceUid=<gen:0>, path=models.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Product [OPTIMISTIC_FORCE_INCREMENT]: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity models.Product: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity models.Product: select product0_.id as id1_2_0_, product0_.description as description2_2_0_, product0_.price as price3_2_0_, product0_.product_category_id as product_category_i5_2_0_, product0_.title as title4_2_0_ from product product0_ where product0_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: models.Role
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from role where id =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select role_.id, role_.title as title2_4_ from role role_ where role_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into role (title, id) values (?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update role set title=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from role where id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29e4f4]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [NONE]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ff64c2]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [READ]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@35172e]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [UPGRADE]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c41abc]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [UPGRADE_NOWAIT]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ce23ac]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [UPGRADE_SKIPLOCKED]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b9394]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [FORCE]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16f61c8]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [PESSIMISTIC_READ]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@cb4b1b]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [PESSIMISTIC_WRITE]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ec2cc4]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [PESSIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e2a2d]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [OPTIMISTIC]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@d645b1]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Role)
+    - Returns
+       - EntityReturnImpl(entity=models.Role, querySpaceUid=<gen:0>, path=models.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Role [OPTIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity models.Role: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity models.Role: select role0_.id as id1_4_0_, role0_.title as title2_4_0_ from role role0_ where role0_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: models.Order
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from my_order where id =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select order_.id, order_.count as count2_1_, order_.price as price3_1_, order_.product_id as product_id5_1_, order_.status as status4_1_, order_.user_id as user_id6_1_ from my_order order_ where order_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into my_order (count, price, product_id, status, user_id, id) values (?, ?, ?, ?, ?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update my_order set count=?, price=?, product_id=?, status=?, user_id=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from my_order where id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c3ad05]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [NONE]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19020fb]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [READ]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@55c54]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [UPGRADE]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e5d0e5]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [UPGRADE_NOWAIT]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1562aa9]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [UPGRADE_SKIPLOCKED]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@276594]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [FORCE]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@66d65f]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [PESSIMISTIC_READ]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@17d2e85]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [PESSIMISTIC_WRITE]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ffcbd7]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [PESSIMISTIC_FORCE_INCREMENT]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b2d00b]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [OPTIMISTIC]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9c38eb]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : count
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : status
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : user
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=models.Order)
+    - Returns
+       - EntityReturnImpl(entity=models.Order, querySpaceUid=<gen:0>, path=models.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=models.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity models.Order [OPTIMISTIC_FORCE_INCREMENT]: select order0_.id as id1_1_0_, order0_.count as count2_1_0_, order0_.price as price3_1_0_, order0_.product_id as product_id5_1_0_, order0_.status as status4_1_0_, order0_.user_id as user_id6_1_0_ from my_order order0_ where order0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity models.Order: select order0_.id as id1_1_2_, order0_.count as count2_1_2_, order0_.price as price3_1_2_, order0_.product_id as product_id5_1_2_, order0_.status as status4_1_2_, order0_.user_id as user_id6_1_2_, product1_.id as id1_2_0_, product1_.description as description2_2_0_, product1_.price as price3_2_0_, product1_.product_category_id as product_category_i5_2_0_, product1_.title as title4_2_0_, user2_.id as id1_0_1_, user2_.age as age2_0_1_, user2_.firstname as firstname3_0_1_, user2_.lastname as lastname4_0_1_ from my_order order0_, product product1_, myUSER user2_ where order0_.product_id=product1_.id(+) and order0_.user_id=user2_.id(+) and order0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity models.Order: select order0_.id as id1_1_2_, order0_.count as count2_1_2_, order0_.price as price3_1_2_, order0_.product_id as product_id5_1_2_, order0_.status as status4_1_2_, order0_.user_id as user_id6_1_2_, product1_.id as id1_2_0_, product1_.description as description2_2_0_, product1_.price as price3_2_0_, product1_.product_category_id as product_category_i5_2_0_, product1_.title as title4_2_0_, user2_.id as id1_0_1_, user2_.age as age2_0_1_, user2_.firstname as firstname3_0_1_, user2_.lastname as lastname4_0_1_ from my_order order0_, product product1_, myUSER user2_ where order0_.product_id=product1_.id(+) and order0_.user_id=user2_.id(+) and order0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@d239ba]
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5945a7]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : price
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=models.ProductCategory.products)
+    - Returns
+       - CollectionReturnImpl(collection=models.ProductCategory.products, querySpaceUid=<gen:0>, path=[models.ProductCategory.products])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=models.Product, querySpaceUid=<gen:1>, path=[models.ProductCategory.products].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=models.ProductCategory.products)
+          - SQL table alias mapping - products0_
+          - alias suffix - 0_
+          - suffixed key columns - {product_category_i5_3_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_2_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=models.Product)
+                - SQL table alias mapping - products0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+
+DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection models.ProductCategory.products: select products0_.product_category_id as product_category_i5_3_0_, products0_.id as id1_2_0_, products0_.id as id1_2_1_, products0_.description as description2_2_1_, products0_.price as price3_2_1_, products0_.product_category_id as product_category_i5_2_1_, products0_.title as title4_2_1_ from product products0_ where products0_.product_category_id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@a6a609]
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@411614]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : age
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : roles
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : roles
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=models.Role.users)
+    - Returns
+       - CollectionReturnImpl(collection=models.Role.users, querySpaceUid=<gen:0>, path=[models.Role.users])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=models.User, querySpaceUid=<gen:1>, path=[models.Role.users].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=models.Role.users)
+          - SQL table alias mapping - users0_
+          - alias suffix - 0_
+          - suffixed key columns - {roles_id2_4_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=models.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection models.Role.users: select users0_.roles_id as roles_id2_4_0_, users0_.users_id as users_id1_5_0_, user1_.id as id1_0_1_, user1_.age as age2_0_1_, user1_.firstname as firstname3_0_1_, user1_.lastname as lastname4_0_1_ from user_role users0_, myUSER user1_ where users0_.users_id=user1_.id and users0_.roles_id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4fd310]
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45193b]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : title
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : users
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : users
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=models.User.roles)
+    - Returns
+       - CollectionReturnImpl(collection=models.User.roles, querySpaceUid=<gen:0>, path=[models.User.roles])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=models.Role, querySpaceUid=<gen:1>, path=[models.User.roles].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=models.User.roles)
+          - SQL table alias mapping - roles0_
+          - alias suffix - 0_
+          - suffixed key columns - {users_id1_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_4_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=models.Role)
+                - SQL table alias mapping - role1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+
+DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection models.User.roles: select roles0_.users_id as users_id1_0_0_, roles0_.roles_id as roles_id2_5_0_, role1_.id as id1_4_1_, role1_.title as title2_4_1_ from user_role roles0_, role role1_ where roles0_.roles_id=role1_.id and roles0_.users_id=?
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@ced48b
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 26337e60-4e5a-42dd-adb5-c278c70effad (<unnamed>)
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+DEBUG main org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+DEBUG main org.hibernate.internal.NamedQueryRepository - Checking 0 named HQL queries
+DEBUG main org.hibernate.internal.NamedQueryRepository - Checking 0 named SQL queries
+DEBUG main org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: false
+DEBUG main org.hibernate.SQL - SELECT p.* FROM product p
+DEBUG main org.hibernate.loader.Loader - Result set row: 0
+DEBUG main org.hibernate.loader.Loader - Result row: EntityKey[models.Product#1]
+DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [models.Product#1]
+DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [models.Product#1]
+DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - committing
+DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.internal.util.EntityPrinter - Listing entities:
+DEBUG main org.hibernate.internal.util.EntityPrinter - models.Product{price=23, description=desc, id=1, title=title, productCategory=null}
+DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - committed JDBC Connection
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+DEBUG main org.hibernate.internal.SessionFactoryImpl - HHH000031: Closing
+DEBUG main org.hibernate.service.internal.AbstractServiceRegistryImpl - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+INFO main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000030: Cleaning up connection pool [jdbc:oracle:thin:@127.0.0.1:1521:HIBER]
+DEBUG main org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries

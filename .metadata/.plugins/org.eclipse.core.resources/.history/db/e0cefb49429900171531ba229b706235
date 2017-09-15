@@ -1,0 +1,21 @@
+package models;
+
+public class Order extends Model{
+
+	private static final long serialVersionUID = 7631194264501456268L;
+	
+	private User user;
+	
+	private Product product;
+	
+	private int count;
+	
+	public Order() {
+		super();
+	}
+	
+	public Order(long id) {
+		super(id);
+	}
+
+}

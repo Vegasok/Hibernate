@@ -1,0 +1,34 @@
+package models;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="order")
+public class Order extends Model{
+
+	private static final long serialVersionUID = 7631194264501456268L;
+	
+	private User user;
+	
+	private Product product;
+	
+	private BigDecimal price;
+	
+	@Column(name="count")
+	private int count;
+	
+	private boolean status;
+	
+	public Order() {
+		super();
+	}
+	
+	public Order(long id) {
+		super(id);
+	}
+
+}

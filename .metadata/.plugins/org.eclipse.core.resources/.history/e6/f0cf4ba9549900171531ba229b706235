@@ -1,0 +1,59 @@
+package Vegas.org;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.SQLQuery;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.jboss.logging.Logger;
+
+import models.ProductCategory;
+import models.Product;
+
+public class Main {
+	
+	private static Logger log = Logger.getLogger(Main.class.getName());
+
+	public static void main(String[] args) {
+		
+		SessionFactory sessionFactory = HibernateUtil.getSessionfactory();
+		Session session = sessionFactory.openSession();
+		List<Product []> products = null;
+		try {
+			session.beginTransaction();
+			/*----------SQL queries-------------*/
+			/*SQLQuery queryUpdate = session.createSQLQuery("UPDATE product SET title = :title WHERE id = :id");
+			queryUpdate.setParameter("title", "test");
+			queryUpdate.setParameter("id", "1");
+			queryUpdate.executeUpdate();
+			
+			SQLQuery querySelect = session.createSQLQuery("SELECT {p.*}, {pc.*} FROM product p INNER JOIN product_category pc ON p.product_category_id = pc.id ");
+			querySelect.addEntity("p", models.Product.class);
+			querySelect.addJoin("pc", "p.productCategory");
+			products = querySelect.list();*/
+			
+			/*----------HQL queries-------------*/
+			Query query = session.createQuery("FROM Product");
+			products = query.list();
+			
+			session.getTransaction().commit();
+		}catch(Exception e) {
+			session.getTransaction().rollback();
+			log.error("message ....", e);
+		}finally{
+			session.close();
+			sessionFactory.close();
+		}
+		
+		for(Product []product: products) {
+			System.out.println(product[0].toString());
+		}
+		
+		/*for(Object []obj: products) {
+			System.out.println(obj[0].toString() + ((models.ProductCategory)obj[1]).getTitle());
+		}*/
+	}
+}
+

@@ -1,0 +1,15 @@
+package models;
+
+public class ProductCategory extends Model{
+
+	private static final long serialVersionUID = 6875657231396402716L;
+	
+	public ProductCategory() {
+		super();
+	}
+	
+	public ProductCategory(long id) {
+		super(id);
+	}
+	
+}
